@@ -9,6 +9,7 @@ from tracker import CentroidTracker # type: ignore
 from classifier import ComplianceClassifier # type: ignore
 from logger import CSVLogger # type: ignore
 from utils import FPSCounter, draw_boxes, setup_video_writer # type: ignore
+from carried_object_detector import CarriedObjectDetector # type: ignore
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Compliance Detection System")
@@ -43,6 +44,7 @@ def main():
 
     # Initialize Components
     detector = YOLODetector(model_path="yolov8n.pt", conf_thresh=0.5) 
+    carried_detector = CarriedObjectDetector(model_path="yolov8n.pt", conf_thresh=0.3)
     tracker = CentroidTracker(maxDisappeared=30, maxDistance=90)
     classifier = ComplianceClassifier()
     logger = CSVLogger(filepath="log.csv")
@@ -62,8 +64,14 @@ def main():
         # 1. Detection Phase (Identify persons and luggage)
         person_boxes, goods = detector.detect(frame)
         
+        # 1.5 Optional Detection Layer (Identify other carried generic items)
+        generic_items = carried_detector.detect(frame)
+        
         # 2. Tracking Phase (Assign unique ID, link centers across frames)
         tracked_objects = tracker.update(person_boxes)
+        
+        # 2.5 Associate Generic Items
+        associated_generic_items = carried_detector.associate(generic_items, tracked_objects)
         
         # Log new person appearances independently
         for person_id in tracked_objects.keys():
@@ -82,7 +90,7 @@ def main():
                 logger.log_event(pid, "No goods detected")
                 
         # 5. Presentation / Visual Output
-        frame = draw_boxes(frame, classified_persons, goods, is_recording=False)
+        frame = draw_boxes(frame, classified_persons, goods, carried_items=associated_generic_items, is_recording=False)
         
         # Save processed image
         os.makedirs("outputs", exist_ok=True)
@@ -130,8 +138,14 @@ def main():
         # 1. Detection Phase (Identify persons and luggage)
         person_boxes, goods = detector.detect(frame)
         
+        # 1.5 Optional Detection Layer (Identify other carried generic items)
+        generic_items = carried_detector.detect(frame)
+        
         # 2. Tracking Phase (Assign unique ID, link centers across frames)
         tracked_objects = tracker.update(person_boxes)
+        
+        # 2.5 Associate Generic Items
+        associated_generic_items = carried_detector.associate(generic_items, tracked_objects)
         
         # Log new person appearances independently
         for person_id in tracked_objects.keys():
@@ -150,7 +164,7 @@ def main():
                 logger.log_event(pid, "No goods detected")
                 
         # 5. Presentation / Visual Output
-        frame = draw_boxes(frame, classified_persons, goods, is_recording=is_recording)
+        frame = draw_boxes(frame, classified_persons, goods, carried_items=associated_generic_items, is_recording=is_recording)
         frame = fps_counter.draw(frame)
         
         # Write the processed frame to the saved video file

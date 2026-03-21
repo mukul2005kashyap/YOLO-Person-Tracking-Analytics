@@ -41,10 +41,19 @@ def setup_video_writer(cap, output_dir="outputs"):
     out = cv2.VideoWriter(filename, fourcc, fps, (frame_width, frame_height))
     return out, filename
 
-def draw_boxes(img, persons, goods, is_recording=False):
+def draw_boxes(img, persons, goods, carried_items=None, is_recording=False):
     """
     Draws bounding boxes for both persons (with IDs and Status) and detected goods.
+    Also handles optionally mapping dynamically carried general items.
     """
+    # Draw dynamically tracked generic items in Orange
+    if carried_items:
+        for item in carried_items:
+            x1, y1, x2, y2 = item['box']
+            color = (0, 165, 255) # Orange for generic objects
+            cv2.rectangle(img, (x1, y1), (x2, y2), color, 2)
+            cv2.putText(img, f"Item: {item['class_name']} {item['conf']:.2f}",
+                        (x1, max(0, y1 - 10)), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
     # Draw goods in BLUE
     for g in goods:
         x1, y1, x2, y2 = g['box']
@@ -63,6 +72,17 @@ def draw_boxes(img, persons, goods, is_recording=False):
         label = f"ID: {p['id']} - {p['status']}"
         cv2.putText(img, label, (x1, max(0, y1 - 10)), 
                     cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
+                    
+        # Show what they are carrying if successfully associated
+        extra_items = []
+        if carried_items:
+            extra_items = [item['class_name'] for item in carried_items if item.get('associated_person_id') == p['id']]
+        
+        if extra_items:
+            items_str = ", ".join(extra_items)
+            carrying_label = f"Carrying Item: {items_str}"
+            cv2.putText(img, carrying_label, (x1, max(0, y1 + 15)), 
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 165, 255), 2)
                     
     # Display Recording indicator
     if is_recording:

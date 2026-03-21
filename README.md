@@ -10,6 +10,7 @@ This project is a real-time Compliance Detection System built using Python, Open
 - `classifier.py`: Connects persons with detected goods using geometric overlap and sets compliance status.
 - `logger.py`: Saves detection events and status changes to `log.csv`.
 - `utils.py`: Contains drawing utilities for bounding boxes and an FPS counter.
+- `carried_object_detector.py`: Detects generic everyday items carried by users and visually associates them.
 
 ## Installation Steps
 1. Make sure you have Python installed.
@@ -36,6 +37,7 @@ python main.py --webcam
 - **Visuals:** 
   - **Persons:** A GREEN bounding box indicates "Compliant" (carrying luggage). A RED bounding box indicates "Non-Compliant" (without luggage). The unique Person ID is shown above the box.
   - **Goods/Luggage:** A Light Blue/Cyan bounding box shows the detected bags/boxes with confidence probabilities.
+  - **Generic Carried Items:** An Orange bounding box alongside an extra 'Carrying Item' tag near the person identifies any additionally detected random objects.
   - **FPS:** Displayed at the top-left corner.
 - **Log Data (`log.csv`):**
   - Records events for each unique Person ID. Format: `Timestamp, Person ID, Event Message`.
