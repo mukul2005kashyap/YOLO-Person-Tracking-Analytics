@@ -1,0 +1,783 @@
+20:48:23,ID_1,Person detected
+20:48:23,ID_1,No goods detected
+20:57:34,ID_1,Person detected
+20:57:34,ID_2,Person detected
+20:57:34,ID_3,Person detected
+20:57:34,ID_4,Person detected
+20:57:34,ID_5,Person detected
+20:57:34,ID_1,No goods detected
+20:57:34,ID_2,Contains luggage
+20:57:34,ID_3,No goods detected
+20:57:34,ID_4,Contains luggage
+20:57:34,ID_5,No goods detected
+20:57:35,ID_6,Person detected
+20:57:35,ID_6,No goods detected
+20:57:35,ID_7,Person detected
+20:57:35,ID_7,No goods detected
+20:57:35,ID_8,Person detected
+20:57:35,ID_8,No goods detected
+20:57:36,ID_9,Person detected
+20:57:36,ID_9,Contains luggage
+20:57:36,ID_2,No goods detected
+20:57:36,ID_4,No goods detected
+20:57:36,ID_9,No goods detected
+20:57:37,ID_4,Contains luggage
+20:57:37,ID_5,Contains luggage
+20:57:37,ID_8,Contains luggage
+20:57:37,ID_2,Contains luggage
+20:57:37,ID_5,No goods detected
+20:57:37,ID_8,No goods detected
+20:57:37,ID_9,Contains luggage
+20:57:37,ID_1,Contains luggage
+20:57:37,ID_3,Contains luggage
+20:57:37,ID_6,Contains luggage
+20:57:37,ID_8,Contains luggage
+20:57:38,ID_2,No goods detected
+20:57:38,ID_9,No goods detected
+20:57:38,ID_1,No goods detected
+20:57:38,ID_3,No goods detected
+20:57:38,ID_6,No goods detected
+20:57:38,ID_8,No goods detected
+20:57:38,ID_4,No goods detected
+20:57:39,ID_4,Contains luggage
+20:57:39,ID_2,Contains luggage
+20:57:39,ID_9,Contains luggage
+20:57:40,ID_4,No goods detected
+20:57:40,ID_5,Contains luggage
+20:57:40,ID_8,Contains luggage
+20:57:41,ID_1,Contains luggage
+20:57:41,ID_3,Contains luggage
+20:57:41,ID_6,Contains luggage
+20:57:41,ID_4,Contains luggage
+20:57:41,ID_5,No goods detected
+20:57:41,ID_2,No goods detected
+20:57:41,ID_9,No goods detected
+20:57:42,ID_3,No goods detected
+20:57:42,ID_2,Contains luggage
+20:57:42,ID_9,Contains luggage
+00:39:25,ID_1,Person detected
+00:39:25,ID_2,Person detected
+00:39:25,ID_3,Person detected
+00:39:25,ID_4,Person detected
+00:39:25,ID_1,Contains luggage
+00:39:25,ID_2,Contains luggage
+00:39:25,ID_3,Contains luggage
+00:39:25,ID_4,Contains luggage
+11:05:13,ID_1,Person detected
+11:05:13,ID_2,Person detected
+11:05:13,ID_3,Person detected
+11:05:13,ID_4,Person detected
+11:05:13,ID_5,Person detected
+11:05:13,ID_6,Person detected
+11:05:13,ID_7,Person detected
+11:05:13,ID_1,No goods detected
+11:05:13,ID_2,No goods detected
+11:05:13,ID_3,No goods detected
+11:05:13,ID_4,No goods detected
+11:05:13,ID_5,No goods detected
+11:05:13,ID_6,No goods detected
+11:05:13,ID_7,No goods detected
+11:05:13,ID_3,Contains luggage
+11:05:13,ID_4,Contains luggage
+11:05:13,ID_6,Contains luggage
+11:05:14,ID_3,No goods detected
+11:05:14,ID_4,No goods detected
+11:05:14,ID_6,No goods detected
+11:05:14,ID_8,Person detected
+11:05:14,ID_9,Person detected
+11:05:14,ID_8,No goods detected
+11:05:14,ID_9,No goods detected
+11:05:14,ID_10,Person detected
+11:05:14,ID_4,Contains luggage
+11:05:14,ID_9,Contains luggage
+11:05:14,ID_10,No goods detected
+11:05:15,ID_4,No goods detected
+11:05:15,ID_9,No goods detected
+11:05:15,ID_11,Person detected
+11:05:15,ID_11,No goods detected
+11:05:16,ID_4,Contains luggage
+11:05:16,ID_12,Person detected
+11:05:16,ID_4,No goods detected
+11:05:16,ID_12,No goods detected
+11:05:16,ID_13,Person detected
+11:05:16,ID_13,No goods detected
+11:05:17,ID_4,Contains luggage
+11:05:18,ID_14,Person detected
+11:05:18,ID_4,No goods detected
+11:05:18,ID_14,No goods detected
+11:05:18,ID_15,Person detected
+11:05:18,ID_15,No goods detected
+11:05:19,ID_16,Person detected
+11:05:19,ID_16,No goods detected
+11:05:22,ID_17,Person detected
+11:05:22,ID_17,No goods detected
+11:05:23,ID_1,Contains luggage
+11:05:23,ID_2,Contains luggage
+11:05:23,ID_5,Contains luggage
+11:05:23,ID_15,Contains luggage
+11:05:23,ID_1,No goods detected
+11:05:23,ID_5,No goods detected
+11:05:23,ID_15,No goods detected
+11:05:24,ID_18,Person detected
+11:05:24,ID_18,No goods detected
+11:05:24,ID_1,Contains luggage
+11:05:24,ID_5,Contains luggage
+11:05:24,ID_15,Contains luggage
+11:05:24,ID_19,Person detected
+11:05:24,ID_19,No goods detected
+11:05:25,ID_1,No goods detected
+11:05:25,ID_5,No goods detected
+11:05:25,ID_15,No goods detected
+11:05:25,ID_1,Contains luggage
+11:05:25,ID_5,Contains luggage
+11:05:25,ID_15,Contains luggage
+11:05:26,ID_11,Contains luggage
+11:05:26,ID_17,Contains luggage
+11:05:26,ID_1,No goods detected
+11:05:26,ID_5,No goods detected
+11:05:26,ID_11,No goods detected
+11:05:26,ID_15,No goods detected
+11:05:26,ID_17,No goods detected
+11:05:26,ID_11,Contains luggage
+11:05:26,ID_17,Contains luggage
+11:05:26,ID_19,Contains luggage
+11:05:26,ID_11,No goods detected
+11:05:26,ID_17,No goods detected
+11:05:26,ID_19,No goods detected
+11:05:26,ID_4,Contains luggage
+11:05:27,ID_4,No goods detected
+11:05:27,ID_20,Person detected
+11:05:27,ID_11,Contains luggage
+11:05:27,ID_17,Contains luggage
+11:05:27,ID_19,Contains luggage
+11:05:27,ID_20,Contains luggage
+11:05:27,ID_11,No goods detected
+11:05:27,ID_17,No goods detected
+11:05:27,ID_19,No goods detected
+11:05:27,ID_20,No goods detected
+11:05:27,ID_21,Person detected
+11:05:27,ID_21,No goods detected
+11:05:27,ID_11,Contains luggage
+11:05:27,ID_17,Contains luggage
+11:05:27,ID_19,Contains luggage
+11:05:27,ID_20,Contains luggage
+11:05:28,ID_1,Contains luggage
+11:05:28,ID_5,Contains luggage
+11:05:28,ID_15,Contains luggage
+11:05:28,ID_19,No goods detected
+11:05:28,ID_1,No goods detected
+11:05:28,ID_5,No goods detected
+11:05:28,ID_15,No goods detected
+11:05:28,ID_17,No goods detected
+11:05:28,ID_20,No goods detected
+11:05:28,ID_22,Person detected
+11:05:28,ID_17,Contains luggage
+11:05:28,ID_20,Contains luggage
+11:05:28,ID_22,Contains luggage
+11:05:28,ID_23,Person detected
+11:05:28,ID_23,Contains luggage
+11:05:28,ID_1,Contains luggage
+11:05:28,ID_5,Contains luggage
+11:05:28,ID_15,Contains luggage
+11:05:28,ID_1,No goods detected
+11:05:28,ID_5,No goods detected
+11:05:28,ID_15,No goods detected
+11:05:28,ID_17,No goods detected
+11:05:28,ID_20,No goods detected
+11:05:28,ID_22,No goods detected
+11:05:28,ID_23,No goods detected
+11:05:29,ID_1,Contains luggage
+11:05:29,ID_5,Contains luggage
+11:05:29,ID_15,Contains luggage
+11:05:29,ID_24,Person detected
+11:05:29,ID_24,No goods detected
+11:05:29,ID_4,Contains luggage
+11:05:29,ID_1,No goods detected
+11:05:29,ID_4,No goods detected
+11:05:29,ID_5,No goods detected
+11:05:29,ID_15,No goods detected
+11:05:29,ID_17,Contains luggage
+11:05:29,ID_19,Contains luggage
+11:05:29,ID_20,Contains luggage
+11:05:29,ID_22,Contains luggage
+11:05:29,ID_23,Contains luggage
+11:05:30,ID_17,No goods detected
+11:05:30,ID_19,No goods detected
+11:05:30,ID_20,No goods detected
+11:05:30,ID_22,No goods detected
+11:05:30,ID_23,No goods detected
+11:05:30,ID_17,Contains luggage
+11:05:30,ID_19,Contains luggage
+11:05:30,ID_21,Contains luggage
+11:05:30,ID_22,Contains luggage
+11:05:30,ID_23,Contains luggage
+11:05:30,ID_17,No goods detected
+11:05:30,ID_19,No goods detected
+11:05:30,ID_21,No goods detected
+11:05:30,ID_22,No goods detected
+11:05:30,ID_23,No goods detected
+11:05:30,ID_17,Contains luggage
+11:05:30,ID_19,Contains luggage
+11:05:30,ID_21,Contains luggage
+11:05:30,ID_22,Contains luggage
+11:05:30,ID_23,Contains luggage
+11:05:31,ID_1,Contains luggage
+11:05:31,ID_15,Contains luggage
+11:05:31,ID_17,No goods detected
+11:05:31,ID_19,No goods detected
+11:05:31,ID_21,No goods detected
+11:05:31,ID_22,No goods detected
+11:05:31,ID_23,No goods detected
+11:05:31,ID_17,Contains luggage
+11:05:31,ID_19,Contains luggage
+11:05:31,ID_21,Contains luggage
+11:05:31,ID_22,Contains luggage
+11:05:31,ID_23,Contains luggage
+11:05:31,ID_1,No goods detected
+11:05:31,ID_15,No goods detected
+11:05:32,ID_1,Contains luggage
+11:05:32,ID_13,Contains luggage
+11:05:32,ID_15,Contains luggage
+11:05:32,ID_1,No goods detected
+11:05:32,ID_13,No goods detected
+11:05:32,ID_15,No goods detected
+11:05:32,ID_17,No goods detected
+11:05:32,ID_19,No goods detected
+11:05:32,ID_21,No goods detected
+11:05:32,ID_22,No goods detected
+11:05:32,ID_23,No goods detected
+11:05:33,ID_25,Person detected
+11:05:33,ID_25,No goods detected
+11:05:33,ID_1,Contains luggage
+11:05:33,ID_15,Contains luggage
+11:05:33,ID_17,Contains luggage
+11:05:33,ID_19,Contains luggage
+11:05:33,ID_22,Contains luggage
+11:05:33,ID_23,Contains luggage
+11:05:33,ID_1,No goods detected
+11:05:33,ID_15,No goods detected
+11:05:33,ID_26,Person detected
+11:05:33,ID_17,No goods detected
+11:05:33,ID_19,No goods detected
+11:05:33,ID_22,No goods detected
+11:05:33,ID_23,No goods detected
+11:05:33,ID_26,No goods detected
+11:05:34,ID_1,Contains luggage
+11:05:34,ID_15,Contains luggage
+11:05:34,ID_1,No goods detected
+11:05:34,ID_15,No goods detected
+11:05:34,ID_1,Contains luggage
+11:05:34,ID_4,Contains luggage
+11:05:34,ID_15,Contains luggage
+11:05:34,ID_16,Contains luggage
+11:05:34,ID_17,Contains luggage
+11:05:34,ID_19,Contains luggage
+11:05:34,ID_22,Contains luggage
+11:05:34,ID_25,Contains luggage
+11:05:34,ID_26,Contains luggage
+11:05:35,ID_25,No goods detected
+11:05:35,ID_1,No goods detected
+11:05:35,ID_4,No goods detected
+11:05:35,ID_15,No goods detected
+11:05:35,ID_16,No goods detected
+11:05:35,ID_27,Person detected
+11:05:35,ID_27,No goods detected
+11:05:35,ID_1,Contains luggage
+11:05:35,ID_4,Contains luggage
+11:05:35,ID_15,Contains luggage
+11:05:35,ID_16,Contains luggage
+11:05:35,ID_1,No goods detected
+11:05:35,ID_4,No goods detected
+11:05:35,ID_15,No goods detected
+11:05:35,ID_16,No goods detected
+11:05:36,ID_17,No goods detected
+11:05:36,ID_19,No goods detected
+11:05:36,ID_22,No goods detected
+11:05:36,ID_26,No goods detected
+11:05:36,ID_17,Contains luggage
+11:05:36,ID_19,Contains luggage
+11:05:36,ID_22,Contains luggage
+11:05:36,ID_26,Contains luggage
+11:05:36,ID_17,No goods detected
+11:05:36,ID_19,No goods detected
+11:05:36,ID_22,No goods detected
+11:05:36,ID_26,No goods detected
+11:05:36,ID_17,Contains luggage
+11:05:36,ID_19,Contains luggage
+11:05:36,ID_22,Contains luggage
+11:05:36,ID_26,Contains luggage
+11:05:37,ID_17,No goods detected
+11:05:37,ID_19,No goods detected
+11:05:37,ID_22,No goods detected
+11:05:37,ID_26,No goods detected
+11:05:37,ID_15,Contains luggage
+11:05:37,ID_17,Contains luggage
+11:05:37,ID_19,Contains luggage
+11:05:37,ID_22,Contains luggage
+11:05:37,ID_26,Contains luggage
+11:05:37,ID_27,Contains luggage
+11:05:37,ID_27,No goods detected
+11:05:38,ID_15,No goods detected
+11:05:38,ID_17,No goods detected
+11:05:38,ID_26,No goods detected
+11:05:38,ID_27,Contains luggage
+11:05:38,ID_15,Contains luggage
+11:05:38,ID_17,Contains luggage
+11:05:38,ID_26,Contains luggage
+11:05:38,ID_15,No goods detected
+11:05:38,ID_17,No goods detected
+11:05:38,ID_26,No goods detected
+11:05:38,ID_22,No goods detected
+11:05:38,ID_27,No goods detected
+11:05:39,ID_22,Contains luggage
+11:05:39,ID_27,Contains luggage
+11:05:39,ID_28,Person detected
+11:05:39,ID_28,No goods detected
+11:05:40,ID_17,Contains luggage
+11:05:40,ID_26,Contains luggage
+11:05:40,ID_27,No goods detected
+11:05:40,ID_28,Contains luggage
+11:05:40,ID_29,Person detected
+11:05:40,ID_29,No goods detected
+11:05:41,ID_29,Contains luggage
+11:05:41,ID_17,No goods detected
+11:05:41,ID_26,No goods detected
+11:05:41,ID_28,No goods detected
+11:05:41,ID_17,Contains luggage
+11:05:41,ID_26,Contains luggage
+11:05:41,ID_28,Contains luggage
+11:05:41,ID_29,No goods detected
+11:05:42,ID_17,No goods detected
+11:05:42,ID_22,No goods detected
+11:05:42,ID_26,No goods detected
+11:05:42,ID_28,No goods detected
+11:05:42,ID_17,Contains luggage
+11:05:42,ID_22,Contains luggage
+11:05:42,ID_26,Contains luggage
+11:05:42,ID_28,Contains luggage
+11:05:42,ID_17,No goods detected
+11:05:42,ID_22,No goods detected
+11:05:42,ID_26,No goods detected
+11:05:42,ID_28,No goods detected
+11:05:42,ID_22,Contains luggage
+11:05:42,ID_26,Contains luggage
+11:05:42,ID_28,Contains luggage
+11:05:43,ID_30,Person detected
+11:05:43,ID_29,Contains luggage
+11:05:43,ID_30,No goods detected
+11:05:43,ID_22,No goods detected
+11:05:43,ID_26,No goods detected
+11:05:43,ID_28,No goods detected
+11:05:43,ID_29,No goods detected
+11:05:43,ID_22,Contains luggage
+11:05:43,ID_26,Contains luggage
+11:05:43,ID_28,Contains luggage
+11:05:44,ID_29,Contains luggage
+11:05:44,ID_17,Contains luggage
+11:05:44,ID_29,No goods detected
+11:05:44,ID_17,No goods detected
+11:05:44,ID_22,No goods detected
+11:05:44,ID_26,No goods detected
+11:05:44,ID_28,No goods detected
+11:05:44,ID_17,Contains luggage
+11:05:44,ID_22,Contains luggage
+11:05:44,ID_26,Contains luggage
+11:05:44,ID_28,Contains luggage
+11:05:44,ID_15,Contains luggage
+11:05:45,ID_15,No goods detected
+11:05:45,ID_17,No goods detected
+11:05:45,ID_22,No goods detected
+11:05:45,ID_26,No goods detected
+11:05:45,ID_28,No goods detected
+11:05:45,ID_15,Contains luggage
+11:05:45,ID_17,Contains luggage
+11:05:45,ID_22,Contains luggage
+11:05:45,ID_26,Contains luggage
+11:05:45,ID_28,Contains luggage
+11:05:45,ID_29,Contains luggage
+11:05:45,ID_30,Contains luggage
+11:05:45,ID_30,No goods detected
+11:05:46,ID_15,No goods detected
+11:05:46,ID_17,No goods detected
+11:05:46,ID_22,No goods detected
+11:05:46,ID_26,No goods detected
+11:05:46,ID_28,No goods detected
+11:05:46,ID_29,No goods detected
+11:05:46,ID_17,Contains luggage
+11:05:46,ID_22,Contains luggage
+11:05:46,ID_26,Contains luggage
+11:05:46,ID_28,Contains luggage
+11:05:46,ID_29,Contains luggage
+11:05:46,ID_17,No goods detected
+11:05:47,ID_31,Person detected
+11:05:47,ID_17,Contains luggage
+11:05:47,ID_31,No goods detected
+11:05:47,ID_32,Person detected
+11:05:47,ID_32,No goods detected
+11:08:23,ID_1,Person detected
+11:08:23,ID_2,Person detected
+11:08:23,ID_3,Person detected
+11:08:23,ID_4,Person detected
+11:08:23,ID_1,Contains luggage
+11:08:23,ID_2,Contains luggage
+11:08:23,ID_3,Contains luggage
+11:08:23,ID_4,Contains luggage
+11:10:27,ID_1,Person detected
+11:10:27,ID_2,Person detected
+11:10:27,ID_3,Person detected
+11:10:27,ID_4,Person detected
+11:10:27,ID_1,Contains luggage
+11:10:27,ID_2,Contains luggage
+11:10:27,ID_3,Contains luggage
+11:10:27,ID_4,Contains luggage
+11:16:40,ID_1,Person detected
+11:16:40,ID_2,Person detected
+11:16:40,ID_3,Person detected
+11:16:40,ID_4,Person detected
+11:16:40,ID_5,Person detected
+11:16:40,ID_6,Person detected
+11:16:40,ID_7,Person detected
+11:16:40,ID_1,No goods detected
+11:16:40,ID_2,No goods detected
+11:16:40,ID_3,No goods detected
+11:16:40,ID_4,No goods detected
+11:16:40,ID_5,No goods detected
+11:16:40,ID_6,No goods detected
+11:16:40,ID_7,No goods detected
+11:16:40,ID_3,Contains luggage
+11:16:40,ID_4,Contains luggage
+11:16:40,ID_6,Contains luggage
+11:16:40,ID_3,No goods detected
+11:16:40,ID_4,No goods detected
+11:16:40,ID_6,No goods detected
+11:16:41,ID_8,Person detected
+11:16:41,ID_9,Person detected
+11:16:41,ID_8,No goods detected
+11:16:41,ID_9,No goods detected
+11:16:41,ID_10,Person detected
+11:16:41,ID_4,Contains luggage
+11:16:41,ID_9,Contains luggage
+11:16:41,ID_10,No goods detected
+11:16:41,ID_4,No goods detected
+11:16:41,ID_9,No goods detected
+11:16:41,ID_11,Person detected
+11:16:41,ID_11,No goods detected
+11:16:42,ID_4,Contains luggage
+11:16:42,ID_12,Person detected
+11:16:42,ID_4,No goods detected
+11:16:42,ID_12,No goods detected
+11:16:42,ID_13,Person detected
+11:16:42,ID_13,No goods detected
+11:16:42,ID_4,Contains luggage
+11:16:42,ID_14,Person detected
+11:16:42,ID_4,No goods detected
+11:16:42,ID_14,No goods detected
+11:16:43,ID_15,Person detected
+11:16:43,ID_15,No goods detected
+11:16:43,ID_16,Person detected
+11:16:43,ID_16,No goods detected
+11:16:45,ID_17,Person detected
+11:16:45,ID_17,No goods detected
+11:16:45,ID_1,Contains luggage
+11:16:45,ID_2,Contains luggage
+11:16:45,ID_5,Contains luggage
+11:16:45,ID_15,Contains luggage
+11:16:46,ID_1,No goods detected
+11:16:46,ID_5,No goods detected
+11:16:46,ID_15,No goods detected
+11:16:46,ID_18,Person detected
+11:16:46,ID_18,No goods detected
+11:16:46,ID_1,Contains luggage
+11:16:46,ID_5,Contains luggage
+11:16:46,ID_15,Contains luggage
+11:16:46,ID_19,Person detected
+11:16:46,ID_19,No goods detected
+11:16:46,ID_1,No goods detected
+11:16:46,ID_5,No goods detected
+11:16:46,ID_15,No goods detected
+11:16:47,ID_1,Contains luggage
+11:16:47,ID_5,Contains luggage
+11:16:47,ID_15,Contains luggage
+11:16:47,ID_11,Contains luggage
+11:16:47,ID_17,Contains luggage
+11:16:47,ID_1,No goods detected
+11:16:47,ID_5,No goods detected
+11:16:47,ID_11,No goods detected
+11:16:47,ID_15,No goods detected
+11:16:47,ID_17,No goods detected
+11:16:47,ID_11,Contains luggage
+11:16:47,ID_17,Contains luggage
+11:16:47,ID_19,Contains luggage
+11:16:47,ID_11,No goods detected
+11:16:47,ID_17,No goods detected
+11:16:47,ID_19,No goods detected
+11:16:47,ID_4,Contains luggage
+11:16:48,ID_4,No goods detected
+11:16:48,ID_20,Person detected
+11:16:48,ID_11,Contains luggage
+11:16:48,ID_17,Contains luggage
+11:16:48,ID_19,Contains luggage
+11:16:48,ID_20,Contains luggage
+11:16:48,ID_11,No goods detected
+11:16:48,ID_17,No goods detected
+11:16:48,ID_19,No goods detected
+11:16:48,ID_20,No goods detected
+11:16:48,ID_21,Person detected
+11:16:48,ID_21,No goods detected
+11:16:48,ID_11,Contains luggage
+11:16:48,ID_17,Contains luggage
+11:16:48,ID_19,Contains luggage
+11:16:48,ID_20,Contains luggage
+11:16:48,ID_1,Contains luggage
+11:16:48,ID_5,Contains luggage
+11:16:48,ID_15,Contains luggage
+11:16:48,ID_19,No goods detected
+11:16:48,ID_1,No goods detected
+11:16:48,ID_5,No goods detected
+11:16:48,ID_15,No goods detected
+11:16:48,ID_17,No goods detected
+11:16:48,ID_20,No goods detected
+11:16:48,ID_22,Person detected
+11:16:48,ID_17,Contains luggage
+11:16:48,ID_20,Contains luggage
+11:16:48,ID_22,Contains luggage
+11:16:48,ID_23,Person detected
+11:16:48,ID_23,Contains luggage
+11:16:48,ID_1,Contains luggage
+11:16:48,ID_5,Contains luggage
+11:16:48,ID_15,Contains luggage
+11:16:48,ID_1,No goods detected
+11:16:48,ID_5,No goods detected
+11:16:48,ID_15,No goods detected
+11:16:48,ID_17,No goods detected
+11:16:48,ID_20,No goods detected
+11:16:48,ID_22,No goods detected
+11:16:48,ID_23,No goods detected
+11:16:49,ID_1,Contains luggage
+11:16:49,ID_5,Contains luggage
+11:16:49,ID_15,Contains luggage
+11:16:49,ID_24,Person detected
+11:16:49,ID_24,No goods detected
+11:16:49,ID_4,Contains luggage
+11:16:49,ID_1,No goods detected
+11:16:49,ID_4,No goods detected
+11:16:49,ID_5,No goods detected
+11:16:49,ID_15,No goods detected
+11:16:49,ID_17,Contains luggage
+11:16:49,ID_19,Contains luggage
+11:16:49,ID_20,Contains luggage
+11:16:49,ID_22,Contains luggage
+11:16:49,ID_23,Contains luggage
+11:16:49,ID_17,No goods detected
+11:16:49,ID_19,No goods detected
+11:16:49,ID_20,No goods detected
+11:16:49,ID_22,No goods detected
+11:16:49,ID_23,No goods detected
+11:16:49,ID_17,Contains luggage
+11:16:49,ID_19,Contains luggage
+11:16:49,ID_21,Contains luggage
+11:16:49,ID_22,Contains luggage
+11:16:49,ID_23,Contains luggage
+11:16:49,ID_17,No goods detected
+11:16:49,ID_19,No goods detected
+11:16:49,ID_21,No goods detected
+11:16:49,ID_22,No goods detected
+11:16:49,ID_23,No goods detected
+11:16:49,ID_17,Contains luggage
+11:16:49,ID_19,Contains luggage
+11:16:49,ID_21,Contains luggage
+11:16:49,ID_22,Contains luggage
+11:16:49,ID_23,Contains luggage
+11:16:50,ID_1,Contains luggage
+11:16:50,ID_15,Contains luggage
+11:16:50,ID_17,No goods detected
+11:16:50,ID_19,No goods detected
+11:16:50,ID_21,No goods detected
+11:16:50,ID_22,No goods detected
+11:16:50,ID_23,No goods detected
+11:16:50,ID_17,Contains luggage
+11:16:50,ID_19,Contains luggage
+11:16:50,ID_21,Contains luggage
+11:16:50,ID_22,Contains luggage
+11:16:50,ID_23,Contains luggage
+11:16:50,ID_1,No goods detected
+11:16:50,ID_15,No goods detected
+11:16:50,ID_1,Contains luggage
+11:16:50,ID_13,Contains luggage
+11:16:50,ID_15,Contains luggage
+11:16:51,ID_1,No goods detected
+11:16:51,ID_13,No goods detected
+11:16:51,ID_15,No goods detected
+11:16:51,ID_17,No goods detected
+11:16:51,ID_19,No goods detected
+11:16:51,ID_21,No goods detected
+11:16:51,ID_22,No goods detected
+11:16:51,ID_23,No goods detected
+11:16:51,ID_25,Person detected
+11:16:51,ID_25,No goods detected
+11:16:51,ID_1,Contains luggage
+11:16:51,ID_15,Contains luggage
+11:16:51,ID_17,Contains luggage
+11:16:51,ID_19,Contains luggage
+11:16:51,ID_22,Contains luggage
+11:16:51,ID_23,Contains luggage
+11:16:51,ID_1,No goods detected
+11:16:51,ID_15,No goods detected
+11:16:51,ID_26,Person detected
+11:16:51,ID_17,No goods detected
+11:16:51,ID_19,No goods detected
+11:16:51,ID_22,No goods detected
+11:16:51,ID_23,No goods detected
+11:16:51,ID_26,No goods detected
+11:16:51,ID_1,Contains luggage
+11:16:51,ID_15,Contains luggage
+11:16:51,ID_1,No goods detected
+11:16:51,ID_15,No goods detected
+11:16:52,ID_1,Contains luggage
+11:16:52,ID_4,Contains luggage
+11:16:52,ID_15,Contains luggage
+11:16:52,ID_16,Contains luggage
+11:16:52,ID_17,Contains luggage
+11:16:52,ID_19,Contains luggage
+11:16:52,ID_22,Contains luggage
+11:16:52,ID_25,Contains luggage
+11:16:52,ID_26,Contains luggage
+11:16:52,ID_25,No goods detected
+11:16:52,ID_1,No goods detected
+11:16:52,ID_4,No goods detected
+11:16:52,ID_15,No goods detected
+11:16:52,ID_16,No goods detected
+11:16:52,ID_27,Person detected
+11:16:52,ID_27,No goods detected
+11:16:52,ID_1,Contains luggage
+11:16:52,ID_4,Contains luggage
+11:16:52,ID_15,Contains luggage
+11:16:52,ID_16,Contains luggage
+11:16:52,ID_1,No goods detected
+11:16:52,ID_4,No goods detected
+11:16:52,ID_15,No goods detected
+11:16:52,ID_16,No goods detected
+11:16:53,ID_17,No goods detected
+11:16:53,ID_19,No goods detected
+11:16:53,ID_22,No goods detected
+11:16:53,ID_26,No goods detected
+11:16:53,ID_17,Contains luggage
+11:16:53,ID_19,Contains luggage
+11:16:53,ID_22,Contains luggage
+11:16:53,ID_26,Contains luggage
+11:16:53,ID_17,No goods detected
+11:16:53,ID_19,No goods detected
+11:16:53,ID_22,No goods detected
+11:16:53,ID_26,No goods detected
+11:16:53,ID_17,Contains luggage
+11:16:53,ID_19,Contains luggage
+11:16:53,ID_22,Contains luggage
+11:16:53,ID_26,Contains luggage
+11:16:53,ID_17,No goods detected
+11:16:53,ID_19,No goods detected
+11:16:53,ID_22,No goods detected
+11:16:53,ID_26,No goods detected
+11:16:53,ID_15,Contains luggage
+11:16:53,ID_17,Contains luggage
+11:16:53,ID_19,Contains luggage
+11:16:53,ID_22,Contains luggage
+11:16:53,ID_26,Contains luggage
+11:16:54,ID_27,Contains luggage
+11:16:54,ID_27,No goods detected
+11:16:54,ID_15,No goods detected
+11:16:54,ID_17,No goods detected
+11:16:54,ID_26,No goods detected
+11:16:54,ID_27,Contains luggage
+11:16:54,ID_15,Contains luggage
+11:16:54,ID_17,Contains luggage
+11:16:54,ID_26,Contains luggage
+11:16:54,ID_15,No goods detected
+11:16:54,ID_17,No goods detected
+11:16:54,ID_26,No goods detected
+11:16:55,ID_22,No goods detected
+11:16:55,ID_27,No goods detected
+11:16:55,ID_22,Contains luggage
+11:16:55,ID_27,Contains luggage
+11:16:55,ID_28,Person detected
+11:16:55,ID_28,No goods detected
+11:16:55,ID_17,Contains luggage
+11:16:55,ID_26,Contains luggage
+11:16:55,ID_27,No goods detected
+11:16:55,ID_28,Contains luggage
+11:16:56,ID_29,Person detected
+11:16:56,ID_29,No goods detected
+11:16:56,ID_29,Contains luggage
+11:16:56,ID_17,No goods detected
+11:16:56,ID_26,No goods detected
+11:16:56,ID_28,No goods detected
+11:16:56,ID_17,Contains luggage
+11:16:56,ID_26,Contains luggage
+11:16:56,ID_28,Contains luggage
+11:16:56,ID_29,No goods detected
+11:16:57,ID_17,No goods detected
+11:16:57,ID_22,No goods detected
+11:16:57,ID_26,No goods detected
+11:16:57,ID_28,No goods detected
+11:16:57,ID_17,Contains luggage
+11:16:57,ID_22,Contains luggage
+11:16:57,ID_26,Contains luggage
+11:16:57,ID_28,Contains luggage
+11:16:57,ID_17,No goods detected
+11:16:57,ID_22,No goods detected
+11:16:57,ID_26,No goods detected
+11:16:57,ID_28,No goods detected
+11:16:57,ID_22,Contains luggage
+11:16:57,ID_26,Contains luggage
+11:16:57,ID_28,Contains luggage
+11:16:57,ID_30,Person detected
+11:16:57,ID_29,Contains luggage
+11:16:57,ID_30,No goods detected
+11:16:58,ID_22,No goods detected
+11:16:58,ID_26,No goods detected
+11:16:58,ID_28,No goods detected
+11:16:58,ID_29,No goods detected
+11:16:58,ID_22,Contains luggage
+11:16:58,ID_26,Contains luggage
+11:16:58,ID_28,Contains luggage
+11:16:58,ID_29,Contains luggage
+11:16:58,ID_17,Contains luggage
+11:16:58,ID_29,No goods detected
+11:16:58,ID_17,No goods detected
+11:16:58,ID_22,No goods detected
+11:16:58,ID_26,No goods detected
+11:16:58,ID_28,No goods detected
+11:16:58,ID_17,Contains luggage
+11:16:58,ID_22,Contains luggage
+11:16:58,ID_26,Contains luggage
+11:16:58,ID_28,Contains luggage
+11:16:58,ID_15,Contains luggage
+11:16:59,ID_15,No goods detected
+11:16:59,ID_17,No goods detected
+11:16:59,ID_22,No goods detected
+11:16:59,ID_26,No goods detected
+11:16:59,ID_28,No goods detected
+11:16:59,ID_15,Contains luggage
+11:16:59,ID_17,Contains luggage
+11:16:59,ID_22,Contains luggage
+11:16:59,ID_26,Contains luggage
+11:16:59,ID_28,Contains luggage
+11:16:59,ID_29,Contains luggage
+11:16:59,ID_30,Contains luggage
+11:16:59,ID_30,No goods detected
+11:17:00,ID_15,No goods detected
+11:17:00,ID_17,No goods detected
+11:17:00,ID_22,No goods detected
+11:17:00,ID_26,No goods detected
+11:17:00,ID_28,No goods detected
+11:17:00,ID_29,No goods detected
+11:17:00,ID_17,Contains luggage
+11:17:00,ID_22,Contains luggage
+11:17:00,ID_26,Contains luggage
+11:17:00,ID_28,Contains luggage
+11:17:00,ID_29,Contains luggage
+11:17:00,ID_17,No goods detected
+11:17:00,ID_31,Person detected
+11:17:01,ID_17,Contains luggage
+11:17:01,ID_31,No goods detected
+11:17:01,ID_32,Person detected
+11:17:01,ID_32,No goods detected
