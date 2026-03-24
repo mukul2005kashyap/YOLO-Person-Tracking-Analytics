@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 
 class YOLODetector:
-    def __init__(self, model_path="yolov8n.pt", conf_thresh=0.5):
+    def __init__(self, model_path="yolov8n.pt", conf_thresh=0.4):
         # Initialize the YOLOv8 model (downloads 'yolov8n.pt' automatically if not found)
         self.model = YOLO(model_path)
         self.conf_thresh = conf_thresh
@@ -11,12 +11,18 @@ class YOLODetector:
         # 24: backpack
         # 26: handbag 
         # 28: suitcase
+        # 39: bottle
+        # 63: laptop
+        # 67: cell phone
         # These represent typical carried goods/bags/boxes.
         self.target_classes = {
             0: "person", 
             24: "backpack", 
             26: "handbag", 
-            28: "suitcase"
+            28: "suitcase",
+            39: "bottle",
+            63: "laptop",
+            67: "cell phone"
         }
 
     def detect(self, img):
@@ -25,7 +31,8 @@ class YOLODetector:
         Returns a list of person bounding boxes and a list of goods/luggage objects.
         """
         # verbose=False reduces terminal spam during live video detection
-        results = self.model(img, stream=False, verbose=False)
+        # iou=0.45 adjusts NMS threshold to handle overlapping objects
+        results = self.model(img, stream=False, verbose=False, iou=0.45, imgsz=640)
         
         persons = []
         goods = []

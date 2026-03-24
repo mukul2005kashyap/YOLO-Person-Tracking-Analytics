@@ -10,7 +10,7 @@ from classifier import ComplianceClassifier # type: ignore
 from logger import CSVLogger # type: ignore
 from utils import FPSCounter, draw_boxes, setup_video_writer # type: ignore
 from carried_object_detector import CarriedObjectDetector # type: ignore
-
+from alert_system import AlertSystem
 def parse_args():
     parser = argparse.ArgumentParser(description="Compliance Detection System")
     parser.add_argument('--webcam', action='store_true', help='Use webcam as input')
@@ -49,6 +49,7 @@ def main():
     classifier = ComplianceClassifier()
     logger = CSVLogger(filepath="log.csv")
     fps_counter = FPSCounter()
+    alert_system = AlertSystem(cooldown=3.0)
 
     if input_type == 'image':
         print("Processing Image Input...")
@@ -91,6 +92,7 @@ def main():
                 
         # 5. Presentation / Visual Output
         frame = draw_boxes(frame, classified_persons, goods, carried_items=associated_generic_items, is_recording=False)
+        frame = alert_system.process(frame, classified_persons, carried_items=associated_generic_items)
         
         # Save processed image
         os.makedirs("outputs", exist_ok=True)
@@ -165,6 +167,7 @@ def main():
                 
         # 5. Presentation / Visual Output
         frame = draw_boxes(frame, classified_persons, goods, carried_items=associated_generic_items, is_recording=is_recording)
+        frame = alert_system.process(frame, classified_persons, carried_items=associated_generic_items)
         frame = fps_counter.draw(frame)
         
         # Write the processed frame to the saved video file
