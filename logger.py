@@ -3,15 +3,27 @@ import pandas as pd
 from datetime import datetime
 
 class CSVLogger:
-    def __init__(self, filepath="log.csv"):
+    def __init__(self, filepath="log.csv", fire_filepath="fire_log.csv"):
         self.filepath = filepath
+        self.fire_filepath = fire_filepath
+        
         # Initialize file with headers if it doesn't exist
         if not os.path.exists(self.filepath):
             df = pd.DataFrame(columns=["Timestamp", "Person ID", "Event Message"])
             df.to_csv(self.filepath, index=False)
             
+        if not os.path.exists(self.fire_filepath):
+            df = pd.DataFrame(columns=["Timestamp", "Event Message"])
+            df.to_csv(self.fire_filepath, index=False)
+            
         # Keep track of the last logged state for each ID to prevent spamming the CSV
         self.history = {} 
+
+    def log_fire_event(self):
+        timestamp = datetime.now().strftime("%H:%M:%S")
+        new_row = {"Timestamp": timestamp, "Event Message": "Fire detected"}
+        df = pd.DataFrame([new_row])
+        df.to_csv(self.fire_filepath, mode='a', header=False, index=False)
 
     def log_event(self, person_id, event_message):
         timestamp = datetime.now().strftime("%H:%M:%S")
