@@ -11,6 +11,9 @@ from logger import CSVLogger # type: ignore
 from utils import FPSCounter, draw_boxes, setup_video_writer # type: ignore
 from carried_object_detector import CarriedObjectDetector # type: ignore
 from alert_system import AlertSystem
+from fire_detector.detector import FireDetector # type: ignore
+from fire_detector.utils import draw_fire_boxes
+
 def parse_args():
     parser = argparse.ArgumentParser(description="Compliance Detection System")
     parser.add_argument('--webcam', action='store_true', help='Use webcam as input')
@@ -45,6 +48,7 @@ def main():
     # Initialize Components
     detector = YOLODetector(model_path="yolov8n.pt", conf_thresh=0.5) 
     carried_detector = CarriedObjectDetector(model_path="yolov8n.pt", conf_thresh=0.3)
+    fire_detector = FireDetector()
     tracker = CentroidTracker(maxDisappeared=30, maxDistance=90)
     classifier = ComplianceClassifier()
     logger = CSVLogger(filepath="log.csv")
@@ -67,6 +71,9 @@ def main():
         
         # 1.5 Optional Detection Layer (Identify other carried generic items)
         generic_items = carried_detector.detect(frame)
+        
+        # 1.8 Fire Detection Layer
+        fire_detections = fire_detector.detect_fire(frame, use_hsv=True)
         
         # 2. Tracking Phase (Assign unique ID, link centers across frames)
         tracked_objects = tracker.update(person_boxes)
@@ -92,7 +99,16 @@ def main():
                 
         # 5. Presentation / Visual Output
         frame = draw_boxes(frame, classified_persons, goods, carried_items=associated_generic_items, is_recording=False)
-        frame = alert_system.process(frame, classified_persons, carried_items=associated_generic_items)
+        frame = draw_fire_boxes(frame, fire_detections)
+        frame, new_fire_alert = alert_system.process(frame, classified_persons, carried_items=associated_generic_items, fire_detections=fire_detections)
+        
+        if new_fire_alert:
+            logger.log_fire_event()
+            os.makedirs("outputs", exist_ok=True)
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            snapshot_filename = os.path.join("outputs", f"fire_alert_{timestamp}.jpg")
+            cv2.imwrite(snapshot_filename, frame)
+            print(f"Fire alert triggered! Snapshot saved to: {snapshot_filename}")
         
         # Save processed image
         os.makedirs("outputs", exist_ok=True)
@@ -130,6 +146,10 @@ def main():
     print(f"Recording output to: {output_filename}")
 
     print("Starting compliance detection... Press 'q' to exit the window.")
+# ----------------------------------------
+    fire_frame_count = 0
+    FIRE_CONFIRM_FRAMES = 3
+# ----------------------------------------
 
     while True:
         ret, frame = cap.read()
@@ -142,6 +162,21 @@ def main():
         
         # 1.5 Optional Detection Layer (Identify other carried generic items)
         generic_items = carried_detector.detect(frame)
+        
+        # 1.8 Fire Detection Layer
+        raw_fire = fire_detector.detect_fire(frame)
+
+        if len(raw_fire) > 0:
+            fire_frame_count += 1
+        else:
+            fire_frame_count = max(0, fire_frame_count - 1)
+
+        fire_frame_count = min(fire_frame_count, FIRE_CONFIRM_FRAMES)
+
+        if fire_frame_count >= FIRE_CONFIRM_FRAMES:
+            fire_detections = raw_fire
+        else:
+            fire_detections = []
         
         # 2. Tracking Phase (Assign unique ID, link centers across frames)
         tracked_objects = tracker.update(person_boxes)
@@ -167,8 +202,18 @@ def main():
                 
         # 5. Presentation / Visual Output
         frame = draw_boxes(frame, classified_persons, goods, carried_items=associated_generic_items, is_recording=is_recording)
-        frame = alert_system.process(frame, classified_persons, carried_items=associated_generic_items)
+        frame = draw_fire_boxes(frame, fire_detections)
+        frame, new_fire_alert = alert_system.process(frame, classified_persons, carried_items=associated_generic_items, fire_detections=fire_detections)
         frame = fps_counter.draw(frame)
+        
+        if new_fire_alert:
+            logger.log_fire_event()
+            # Save snapshot
+            os.makedirs("outputs", exist_ok=True)
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            snapshot_filename = os.path.join("outputs", f"fire_alert_{timestamp}.jpg")
+            cv2.imwrite(snapshot_filename, frame)
+            print(f"Fire alert triggered! Snapshot saved to: {snapshot_filename}")
         
         # Write the processed frame to the saved video file
         if is_recording:
