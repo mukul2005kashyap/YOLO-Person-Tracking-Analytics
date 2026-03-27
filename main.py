@@ -178,7 +178,7 @@ def main():
         else:
             fire_detections = []
         
-        # 2. Tracking Phase (Assign unique ID, link centers across frames)
+        # 2. Tracking Phase (Assign unique ID, link centers across  frames)
         tracked_objects = tracker.update(person_boxes)
         
         # 2.5 Associate Generic Items
